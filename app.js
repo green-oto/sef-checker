@@ -38,7 +38,7 @@
         }
 
         $scope.checkOriginalUrl = function(index, onse) {
-            if ($scope.urlList[index].original.url == '') {
+            if ($scope.urlList[index] == undefined) {
                 return false;
             }
             $scope.httpError = false;
@@ -68,7 +68,7 @@
         }
 
         $scope.checkSeflUrl = function(index, onse) {
-            if ($scope.urlList[index].sef.url == '') {
+            if ($scope.urlList[index] == undefined) {
                 return false;
             }
             $scope.httpError = false;
